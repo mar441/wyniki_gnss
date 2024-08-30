@@ -8,3 +8,4 @@ Flask
 pandas
 plotly
 numpy
+matplotlib

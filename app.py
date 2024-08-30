@@ -48,22 +48,23 @@ def combine_pos_files(file_paths):
     return combined_df
 
 receiver_files = {
-    'Odbiornik_1': ['odbiornik_1\\pierwsza_godzina.pos', 
-                    'odbiornik_1\\druga_godzina.pos', 
-                    'odbiornik_1\\trzecia_godzina.pos',
-                    'odbiornik_1\\czwarta_godzina.pos'],
-    'Odbiornik_2': ['odbiornik_2\\PIERWSZA_GODZINA.pos',
-                    'odbiornik_2\\DRUGA_GODZINA.pos',
-                    'odbiornik_2\\TRZECIA_GODZINA.pos',
-                    'odbiornik_2\\CZWARTA_GODZINA.pos'],
-    'Odbiornik_3': ['odbiornik_3\\PIERWSZA_GODZINA.pos',
-                    'odbiornik_3\\DRUGA_GODZINA.pos',
-                    'odbiornik_3\\TRZECIA_GODZINA.pos',
-                    'odbiornik_3\\CZWARTA_GODZINA.pos'],
-    'Odbiornik_4': ['odbiornik_4\\PIERWSZA_GODZINA.pos',
-                    'odbiornik_4\\DRUGA_GODZINA.pos',
-                    'odbiornik_4\\TRZECIA_GODZINA.pos',
-                    'odbiornik_4\\CZWARTA_GODZINA.pos']}
+    'Odbiornik_1': [os.path.join('odbiornik_1', 'pierwsza_godzina.pos'),
+                    os.path.join('odbiornik_1', 'druga_godzina.pos'),
+                    os.path.join('odbiornik_1', 'trzecia_godzina.pos'),
+                    os.path.join('odbiornik_1', 'czwarta_godzina.pos')],
+    'Odbiornik_2': [os.path.join('odbiornik_2', 'PIERWSZA_GODZINA.pos'),
+                    os.path.join('odbiornik_2', 'DRUGA_GODZINA.pos'),
+                    os.path.join('odbiornik_2', 'TRZECIA_GODZINA.pos'),
+                    os.path.join('odbiornik_2', 'CZWARTA_GODZINA.pos')],
+    'Odbiornik_3': [os.path.join('odbiornik_3', 'PIERWSZA_GODZINA.pos'),
+                    os.path.join('odbiornik_3', 'DRUGA_GODZINA.pos'),
+                    os.path.join('odbiornik_3', 'TRZECIA_GODZINA.pos'),
+                    os.path.join('odbiornik_3', 'CZWARTA_GODZINA.pos')],
+    'Odbiornik_4': [os.path.join('odbiornik_4', 'PIERWSZA_GODZINA.pos'),
+                    os.path.join('odbiornik_4', 'DRUGA_GODZINA.pos'),
+                    os.path.join('odbiornik_4', 'TRZECIA_GODZINA.pos'),
+                    os.path.join('odbiornik_4', 'CZWARTA_GODZINA.pos')]
+}
 
 
 all_data = pd.DataFrame()
